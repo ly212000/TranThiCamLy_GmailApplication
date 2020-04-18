@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/text_letter"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:text="T"
+        android:textSize="40sp"
+        android:textColor="#FFF"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_letter"
+        android:layout_toLeftOf="@+id/text_time"
+        android:singleLine="true"
+        android:text="Hello World"
+        android:textSize="24sp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/text_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_letter"
+        android:layout_toLeftOf="@id/star"
+        android:layout_below="@id/text_name"
+        android:singleLine="true"
+        android:text="Hello World Hello World Hello World Hello World "
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_letter"
+        android:layout_toLeftOf="@id/star"
+        android:layout_below="@id/text_subject"
+        android:singleLine="true"
+        android:text="Hello World Hello World Hello World Hello World"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="12:00 PM"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/star_normal"/>
+</RelativeLayout>
